@@ -55,10 +55,6 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View arg0)
             {
 
-                Intent intent = new Intent(context,MainActivity2.class);
-
-                startActivity(intent);
-
 
                 //will take in the value put in by the edit text space
                 EditText editText = (EditText) findViewById(R.id.editText2);
@@ -66,12 +62,20 @@ public class MainActivity extends AppCompatActivity
 
                 //outputs the value in activity_main2
                 setContentView(R.layout.activity_main2);
+
                 TextView textView = (TextView) findViewById(R.id.textView4);
                 textView.setText(value);
 
+                //This gives a feature for returning to the main page but there is also
+                //a bug so until it is fixed we will keep it this way
+                /*
+                Intent intent = new Intent(context,MainActivity2.class);
 
-
+                startActivity(intent);
+                */
             }
+
+
         });
     }
 
