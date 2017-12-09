@@ -79,7 +79,7 @@
         android:text="@string/app_name"
         android:layout_marginEnd="52dp"
         android:layout_marginTop="376dp"
-        android:layout_toRightOf="@id/Germany" />
+        android:layout_toRightOf="@id/Australia" />
 
     <Button
         android:id="@+id/USD"
@@ -91,74 +91,108 @@
         android:layout_below="@id/textView" />
 
     <Button
-        android:id="@+id/Australia"
+        android:id="@+id/Britain"
         android:layout_width="115dp"
         android:layout_height="43dp"
         android:layout_marginStart="31dp"
         android:layout_marginTop="29dp"
-        android:text="Australian Dollar"
+        android:text="British Pound"
         android:textSize="10sp"
         android:layout_below="@id/USD" />
 
     <Button
-        android:id="@+id/Canada"
+        android:id="@+id/Japan"
         android:layout_width="116dp"
         android:layout_height="46dp"
         android:layout_marginLeft="24dp"
-        android:text="Canadian Dollar"
+        android:text="Japanese Yen"
         android:textSize="10sp"
-        android:layout_below="@id/Australia" />
+        android:layout_below="@id/Britain" />
 
     <Button
-        android:id="@+id/China"
+        android:id="@+id/Australia"
         android:layout_width="99dp"
         android:layout_height="46dp"
         android:layout_marginStart="34dp"
         android:layout_marginTop="22dp"
-        android:text="Chinese Yuan"
+        android:text="Australian Dollar"
         android:textSize="10sp"
-        android:layout_below="@id/Canada" />
+        android:layout_below="@id/Japan" />
 
     <Button
-        android:id="@+id/Germany"
+        android:id="@+id/Switzerland"
         android:layout_width="102dp"
         android:layout_height="43dp"
         android:layout_marginStart="34dp"
         android:layout_marginTop="32dp"
-        android:text="German Mark"
+        android:text="Swiss Franc"
         android:textSize="10sp"
-        android:layout_below="@id/China"/>
+        android:layout_below="@id/Australia"/>
 
 
         <Button
-            android:id="@+id/Prop"
+            android:id="@+id/Canada"
             android:layout_width="102dp"
             android:layout_height="43dp"
             android:layout_marginStart="34dp"
             android:layout_marginTop="32dp"
-            android:text="Test"
+            android:text="Canadian Dollar"
             android:textSize="10sp"
-            android:layout_below="@id/Germany"/>
+            android:layout_below="@id/Switzerland"/>
 
         <Button
-            android:id="@+id/Prop2"
+            android:id="@+id/China"
             android:layout_width="102dp"
             android:layout_height="43dp"
             android:layout_marginStart="34dp"
             android:layout_marginTop="32dp"
-            android:text="Test2"
+            android:text="Chinese Yuan"
             android:textSize="10sp"
-            android:layout_below="@id/Prop"/>
+            android:layout_below="@id/Canada"/>
 
         <Button
-            android:id="@+id/Prop3"
+            android:id="@+id/Hong_Kong"
             android:layout_width="102dp"
             android:layout_height="43dp"
             android:layout_marginStart="34dp"
             android:layout_marginTop="32dp"
-            android:text="Test3"
+            android:text="Hong Kong Dollar"
             android:textSize="10sp"
-            android:layout_below="@id/Prop2"/>
+            android:layout_below="@id/China"/>
+
+        <Button
+            android:id="@+id/Mexico"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Mexican Peso"
+            android:textSize="10sp"
+            android:layout_below="@id/Hong_Kong"/>
+
+        <Button
+            android:id="@+id/Brazil"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Brazilian Real"
+            android:textSize="10sp"
+            android:layout_below="@id/Mexico"/>
+
+        <Button
+            android:id="@+id/Euro"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Euro"
+            android:textSize="10sp"
+            android:layout_below="@id/Brazil"/>
+
+
+
+
 
     </RelativeLayout>
 

@@ -4,10 +4,16 @@
 
     <string-array name = "Currency_arrays">
         <item>US Dollar</item>
-        <item>Australian Dollar </item>
-        <item>Canadian Dollar </item>
+        <item>British Pound </item>
+        <item>Japanese Yen </item>
+        <item>Australian Dollar</item>
+        <item>Swiss Franc</item>
+        <item>Canadian Dollar</item>
         <item>Chinese Yuan</item>
-        <item>German Mark</item>
+        <item>Hong Kong Dollar</item>
+        <item>Mexican Peso</item>
+        <item>Brazilian Real</item>
+        <item>Euro</item>
     </string-array>
 
 

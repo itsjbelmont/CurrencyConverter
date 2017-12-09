@@ -72,8 +72,44 @@ public class MainActivity2 extends MainActivity
         });
     }
 
-    //Button for Australian Dollar
+    //Button for British Pound
     public void addListenerOnButton3()
+    {
+        Button Britain_button = (Button) findViewById(R.id.Britain);
+
+        Britain_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+
+                startActivity(intent);
+            }
+        });
+    }
+
+
+    //Button for Japanese Yen Dollar
+    public void addListenerOnButton4()
+    {
+        Button Japan_button = (Button) findViewById(R.id.Japan);
+
+        Japan_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+
+                startActivity(intent);
+            }
+        });
+    }
+
+
+    //Button for Australian Dollar
+    public void addListenerOnButton5()
     {
         Button Australia_button = (Button) findViewById(R.id.Australia);
 
@@ -89,48 +125,12 @@ public class MainActivity2 extends MainActivity
         });
     }
 
-
-    //Button for Canadian Dollar
-    public void addListenerOnButton4()
-    {
-        Button Canada_button = (Button) findViewById(R.id.Canada);
-
-        Canada_button.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
-
-                startActivity(intent);
-            }
-        });
-    }
-
-
-    //Button for Chinese Dollar
-    public void addListenerOnButton5()
-    {
-        Button China_button = (Button) findViewById(R.id.China);
-
-        China_button.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
-
-                startActivity(intent);
-            }
-        });
-    }
-
-    //Button for German Dollar
+    //Button for Swiss Frac
     public void addListenerOnButton6()
     {
-        Button German_button = (Button) findViewById(R.id.Germany);
+        Button Swiss_button = (Button) findViewById(R.id.Switzerland);
 
-        German_button.setOnClickListener(new View.OnClickListener()
+        Swiss_button.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
