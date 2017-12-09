@@ -33,52 +33,6 @@
 
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="115dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="168dp"
-        android:text="Australian Dollar"
-        android:textAlignment="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="115dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="236dp"
-        android:text="Canadian Dollar"
-        android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="115dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="312dp"
-        android:text="Chinese Yuan"
-        android:textAlignment="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="115dp"
-        android:layout_height="35dp"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="376dp"
-        android:text="German Mark"
-        android:textAlignment="center"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
         android:id="@+id/textView8"
         android:layout_width="115dp"
         android:layout_height="35dp"
@@ -133,6 +87,50 @@
         android:text="US Dollar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+    <Button
+        android:id="@+id/Australia"
+        android:layout_width="115dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="29dp"
+        android:text="Australian Dollar"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/USD" />
+
+    <Button
+        android:id="@+id/Canada"
+        android:layout_width="116dp"
+        android:layout_height="46dp"
+        android:layout_marginLeft="24dp"
+        android:text="Canadian Dollar"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/China"
+        android:layout_width="99dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="22dp"
+        android:text="Chinese Yuan"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Canada" />
+
+    <Button
+        android:id="@+id/Germany"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="32dp"
+        android:text="German Mark"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/China" />
 
 
 </android.support.constraint.ConstraintLayout>
