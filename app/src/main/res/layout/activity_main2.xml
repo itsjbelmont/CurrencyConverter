@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
     tools:context="com.example.jackbelmont.currencyconverter.MainActivity">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="82dp"
-        android:layout_height="23dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Search:"
         android:textAlignment="viewStart"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.158"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.032" />
+        android:layout_alignParentTop="true"/>
+
 
     <EditText
         android:id="@+id/editText2"
@@ -26,57 +30,56 @@
         android:layout_height="41dp"
         android:ems="10"
         android:inputType="textShortMessage"
-        app:layout_constraintHorizontal_bias="0.644"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_centerHorizontal="true" />
+
+
 
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="115dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
         android:layout_marginEnd="52dp"
         android:layout_marginTop="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_toRightOf="@id/USD"/>
+
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="115dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
         android:layout_marginEnd="52dp"
         android:layout_marginTop="168dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_toRightOf="@id/Australia" />
 
     <TextView
         android:id="@+id/textView10"
-        android:layout_width="115dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
         android:layout_marginEnd="52dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521" />
+        android:layout_toRightOf="@id/Canada"
+        android:layout_below="@id/textView9"/>
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="115dp"
-        android:layout_height="35dp"
+        android:layout_width= "wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
         android:layout_marginEnd="52dp"
         android:layout_marginTop="312dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_toRightOf="@id/China" />
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="115dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
         android:layout_marginEnd="52dp"
         android:layout_marginTop="376dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_toRightOf="@id/Germany" />
 
     <Button
         android:id="@+id/USD"
@@ -85,8 +88,7 @@
         android:layout_marginStart="34dp"
         android:layout_marginTop="51dp"
         android:text="US Dollar"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        android:layout_below="@id/textView" />
 
     <Button
         android:id="@+id/Australia"
@@ -96,8 +98,7 @@
         android:layout_marginTop="29dp"
         android:text="Australian Dollar"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/USD" />
+        android:layout_below="@id/USD" />
 
     <Button
         android:id="@+id/Canada"
@@ -106,9 +107,7 @@
         android:layout_marginLeft="24dp"
         android:text="Canadian Dollar"
         android:textSize="10sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_below="@id/Australia" />
 
     <Button
         android:id="@+id/China"
@@ -118,8 +117,7 @@
         android:layout_marginTop="22dp"
         android:text="Chinese Yuan"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Canada" />
+        android:layout_below="@id/Canada" />
 
     <Button
         android:id="@+id/Germany"
@@ -129,8 +127,39 @@
         android:layout_marginTop="32dp"
         android:text="German Mark"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/China" />
+        android:layout_below="@id/China"/>
 
 
-</android.support.constraint.ConstraintLayout>
+        <Button
+            android:id="@+id/Prop"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Test"
+            android:textSize="10sp"
+            android:layout_below="@id/Germany"/>
+
+        <Button
+            android:id="@+id/Prop2"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Test2"
+            android:textSize="10sp"
+            android:layout_below="@id/Prop"/>
+
+        <Button
+            android:id="@+id/Prop3"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Test3"
+            android:textSize="10sp"
+            android:layout_below="@id/Prop2"/>
+
+    </RelativeLayout>
+
+</ScrollView>
