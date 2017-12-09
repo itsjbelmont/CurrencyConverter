@@ -50,6 +50,12 @@ public class MainActivity2 extends MainActivity
         addListenerOnButton4();
         addListenerOnButton5();
         addListenerOnButton6();
+        addListenerOnButton7();
+        addListenerOnButton8();
+        addListenerOnButton9();
+        addListenerOnButton10();
+        addListenerOnButton11();
+        addListenerOnButton12();
     }
 
 
@@ -142,4 +148,105 @@ public class MainActivity2 extends MainActivity
         });
     }
 
+    //Button for Canadian Dollar
+    public void addListenerOnButton7()
+    {
+        Button Canada_button = (Button) findViewById(R.id.Canada);
+
+        Canada_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+
+                startActivity(intent);
+            }
+        });
+    }
+
+    //Button for China Yuan
+    public void addListenerOnButton8()
+    {
+        Button China_button = (Button) findViewById(R.id.China);
+
+        China_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+
+                startActivity(intent);
+            }
+        });
+    }
+
+    //Button for Hong Kong Money
+    public void addListenerOnButton9()
+    {
+        Button Hong_button = (Button) findViewById(R.id.Hong_Kong);
+
+        Hong_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+
+                startActivity(intent);
+            }
+        });
+    }
+
+    //Button for Mexican Peso
+    public void addListenerOnButton10()
+    {
+        Button Mexico_button = (Button) findViewById(R.id.Mexico);
+
+        Mexico_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+
+                startActivity(intent);
+            }
+        });
+    }
+
+    //Button for Brazilian Real
+    public void addListenerOnButton11()
+    {
+        Button Brazil_button = (Button) findViewById(R.id.Brazil);
+
+        Brazil_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+
+                startActivity(intent);
+            }
+        });
+    }
+
+    //Button for Euro
+    public void addListenerOnButton12()
+    {
+        Button Euro_button = (Button) findViewById(R.id.Euro);
+
+        Euro_button.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+
+                startActivity(intent);
+            }
+        });
+    }
 }

@@ -13,185 +13,236 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Search:"
-        android:textAlignment="viewStart"
-        android:layout_alignParentTop="true"/>
-
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="228dp"
-        android:layout_height="41dp"
-        android:ems="10"
-        android:inputType="textShortMessage"
-        android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Search:"
+            android:textAlignment="viewStart" />
 
 
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="228dp"
+            android:layout_height="41dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textShortMessage" />
 
 
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:layout_marginEnd="52dp"
-        android:layout_marginTop="100dp"
-        android:layout_toRightOf="@id/USD"/>
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/USD"
+            android:layout_alignBottom="@+id/USD"
+            android:layout_marginStart="47dp"
+            android:layout_toEndOf="@+id/USD"
+            android:text="@string/app_name" />
 
 
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:layout_marginEnd="52dp"
-        android:layout_marginTop="168dp"
-        android:layout_toRightOf="@id/Australia" />
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Britain"
+            android:layout_alignBottom="@+id/Britain"
+            android:layout_alignStart="@+id/textView8"
+            android:text="@string/app_name" />
 
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:layout_marginEnd="52dp"
-        android:layout_toRightOf="@id/Canada"
-        android:layout_below="@id/textView9"/>
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Japan"
+            android:layout_alignBottom="@+id/Japan"
+            android:layout_alignStart="@+id/textView9"
+            android:text="@string/app_name" />
 
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width= "wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:layout_marginEnd="52dp"
-        android:layout_marginTop="312dp"
-        android:layout_toRightOf="@id/China" />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Australia"
+            android:layout_alignBottom="@+id/Australia"
+            android:layout_alignStart="@+id/textView10"
+            android:text="@string/app_name" />
 
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:layout_marginEnd="52dp"
-        android:layout_marginTop="376dp"
-        android:layout_toRightOf="@id/Australia" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Switzerland"
+            android:layout_alignBottom="@+id/Switzerland"
+            android:layout_alignStart="@+id/textView11"
+            android:text="@string/app_name" />
 
-    <Button
-        android:id="@+id/USD"
-        android:layout_width="105dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="51dp"
-        android:text="US Dollar"
-        android:layout_below="@id/textView" />
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Brazil"
+            android:layout_alignBottom="@+id/Brazil"
+            android:layout_alignStart="@+id/textView14"
+            android:text="@string/app_name" />
 
-    <Button
-        android:id="@+id/Britain"
-        android:layout_width="115dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="29dp"
-        android:text="British Pound"
-        android:textSize="10sp"
-        android:layout_below="@id/USD" />
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Mexico"
+            android:layout_alignBottom="@+id/Mexico"
+            android:layout_alignStart="@+id/textView15"
+            android:text="@string/app_name" />
 
-    <Button
-        android:id="@+id/Japan"
-        android:layout_width="116dp"
-        android:layout_height="46dp"
-        android:layout_marginLeft="24dp"
-        android:text="Japanese Yen"
-        android:textSize="10sp"
-        android:layout_below="@id/Britain" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Canada"
+            android:layout_alignBottom="@+id/Canada"
+            android:layout_alignStart="@+id/textView12"
+            android:text="@string/app_name" />
 
-    <Button
-        android:id="@+id/Australia"
-        android:layout_width="99dp"
-        android:layout_height="46dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="22dp"
-        android:text="Australian Dollar"
-        android:textSize="10sp"
-        android:layout_below="@id/Japan" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/China"
+            android:layout_alignBottom="@+id/China"
+            android:layout_alignStart="@+id/textView15"
+            android:text="@string/app_name" />
 
-    <Button
-        android:id="@+id/Switzerland"
-        android:layout_width="102dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="32dp"
-        android:text="Swiss Franc"
-        android:textSize="10sp"
-        android:layout_below="@id/Australia"/>
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Hong_Kong"
+            android:layout_alignBottom="@+id/Hong_Kong"
+            android:layout_alignStart="@+id/textView16"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Euro"
+            android:layout_alignBottom="@+id/Euro"
+            android:layout_alignStart="@+id/textView13"
+            android:text="@string/app_name" />
+
+        <Button
+            android:id="@+id/USD"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/textView"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="US Dollar" />
+
+        <Button
+            android:id="@+id/Britain"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/USD"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="British Pound"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/Japan"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/Britain"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Japanese Yen"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/Australia"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/Japan"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Australian Dollar"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/Switzerland"
+            android:layout_width="102dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/Australia"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="32dp"
+            android:text="Swiss Franc"
+            android:textSize="10sp" />
 
 
         <Button
             android:id="@+id/Canada"
             android:layout_width="102dp"
             android:layout_height="43dp"
+            android:layout_below="@id/Switzerland"
             android:layout_marginStart="34dp"
             android:layout_marginTop="32dp"
             android:text="Canadian Dollar"
-            android:textSize="10sp"
-            android:layout_below="@id/Switzerland"/>
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/China"
             android:layout_width="102dp"
             android:layout_height="43dp"
+            android:layout_below="@id/Canada"
             android:layout_marginStart="34dp"
             android:layout_marginTop="32dp"
             android:text="Chinese Yuan"
-            android:textSize="10sp"
-            android:layout_below="@id/Canada"/>
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/Hong_Kong"
             android:layout_width="102dp"
             android:layout_height="43dp"
+            android:layout_below="@id/China"
             android:layout_marginStart="34dp"
             android:layout_marginTop="32dp"
             android:text="Hong Kong Dollar"
-            android:textSize="10sp"
-            android:layout_below="@id/China"/>
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/Mexico"
             android:layout_width="102dp"
             android:layout_height="43dp"
+            android:layout_below="@id/Hong_Kong"
             android:layout_marginStart="34dp"
             android:layout_marginTop="32dp"
             android:text="Mexican Peso"
-            android:textSize="10sp"
-            android:layout_below="@id/Hong_Kong"/>
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/Brazil"
             android:layout_width="102dp"
             android:layout_height="43dp"
+            android:layout_below="@id/Mexico"
             android:layout_marginStart="34dp"
             android:layout_marginTop="32dp"
             android:text="Brazilian Real"
-            android:textSize="10sp"
-            android:layout_below="@id/Mexico"/>
+            android:textSize="10sp" />
 
         <Button
             android:id="@+id/Euro"
             android:layout_width="102dp"
             android:layout_height="43dp"
+            android:layout_below="@id/Brazil"
             android:layout_marginStart="34dp"
             android:layout_marginTop="32dp"
             android:text="Euro"
-            android:textSize="10sp"
-            android:layout_below="@id/Brazil"/>
-
-
-
+            android:textSize="10sp" />
 
 
     </RelativeLayout>
