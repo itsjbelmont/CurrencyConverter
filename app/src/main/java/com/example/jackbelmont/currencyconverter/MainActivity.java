@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity
     //screen when the app starts
     Button buttonMain;
 
+    //Back button for going back to main screen
+
+
     //This onCreate sets up the layout view on the app and creates a listener
     //for input from the button
     @Override
@@ -34,9 +37,8 @@ public class MainActivity extends AppCompatActivity
 
         //listens for button
         addListenerOnButton();
+
     }
-
-
 
     //creates the listener on the button
     //the button will lead to another screen, and also link the data being sent to
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity
     public void addListenerOnButton()
     {
 
-            final Context context = this;
+            //final Context context = this;
 
             buttonMain = (Button) findViewById(R.id.button);
 
@@ -57,39 +59,16 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View arg0)
             {
 
-                //Gets whatever was inputted into main text box
-                EditText editText = (EditText) findViewById(R.id.editText2);
-                String string1 = editText.getText().toString();
+                Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
 
-
-                //sets up content layout
-                setContentView(R.layout.activity_main2);
-
-
-                //Puts value into text box 8
-                TextView textView = (TextView) findViewById(R.id.textView8);
-                textView.setText(string1);
-
-                //Puts value into text box 9
-                TextView textView1 = (TextView) findViewById(R.id.textView9);
-                textView1.setText(string1);
-
-                //puts value into box 10
-                TextView textView2 = (TextView) findViewById(R.id.textView10);
-                textView2.setText(string1);
-
-                //puts value into box 11
-                TextView textView3 = (TextView) findViewById(R.id.textView11);
-                textView3.setText(string1);
-
-                //puts view into box 12
-                TextView textView4 = (TextView) findViewById(R.id.textView12);
-                textView4.setText(string1);
+                startActivity(intent);
 
             }
 
 
         });
+
     }
+
 
 }
