@@ -1,6 +1,9 @@
 package com.example.jackbelmont.currencyconverter;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -42,7 +45,29 @@ public class MainActivity2 extends MainActivity
         textView4.setText(string1);
 
 
+        addListenerOnButton2();
     }
+
+
+
+    public void addListenerOnButton2()
+    {
+
+
+        //collects all the buttons
+        Button US_button = (Button) findViewById(R.id.USD);
+
+        US_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent2 = new Intent(getApplicationContext(),MainActivity3.class);
+
+                startActivity(intent2);
+            }
+        });
+    }
+
 
 
 
