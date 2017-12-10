@@ -16,14 +16,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!--
-        <ImageView
-            android:id="@+id/GB_but"
-            android:layout_width="600dp"
-            android:layout_height="200dp"
-            android:visibility="visible"
-            app:srcCompat="@drawable/britain_flag"/>
--->
 
         <ImageView
             android:id="@+id/GB_dollar"
@@ -35,6 +27,15 @@
             android:contentDescription="@string/Money_Options"
             android:visibility="visible"
             app:srcCompat="@drawable/british_pound" />
+
+
+        <ImageView
+            android:id="@+id/gb_flag1"
+            android:layout_width="500dp"
+            android:layout_height="190dp"
+            android:contentDescription="@string/app_name"
+            android:visibility="visible"
+            app:srcCompat="@drawable/british_flag" />
 
 
     </RelativeLayout>

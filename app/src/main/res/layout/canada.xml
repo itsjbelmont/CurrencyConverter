@@ -18,6 +18,25 @@
 
 
 
+        <ImageView
+            android:id="@+id/cn_flag"
+            android:layout_width="600dp"
+            android:layout_height="200dp"
+            android:visibility="visible"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/canada_flag"/>
+
+
+        <ImageView
+            android:id="@+id/cn_dollar"
+            android:layout_width="600dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="293dp"
+            android:contentDescription="@string/Money_Options"
+            android:visibility="visible"
+            app:srcCompat="@drawable/canada_dollar" />
 
 
 
