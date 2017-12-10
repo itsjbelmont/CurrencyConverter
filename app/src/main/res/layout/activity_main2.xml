@@ -40,8 +40,7 @@
             android:layout_alignBaseline="@+id/USD"
             android:layout_alignBottom="@+id/USD"
             android:layout_marginStart="47dp"
-            android:layout_toEndOf="@+id/USD"
-            android:text="@string/app_name" />
+            android:layout_toEndOf="@+id/USD"/>
 
 
         <TextView
@@ -50,8 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/Britain"
             android:layout_alignBottom="@+id/Britain"
-            android:layout_alignStart="@+id/textView8"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView8" />
 
         <TextView
             android:id="@+id/textView10"
@@ -59,8 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/Japan"
             android:layout_alignBottom="@+id/Japan"
-            android:layout_alignStart="@+id/textView9"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView9"/>
 
         <TextView
             android:id="@+id/textView11"
@@ -68,8 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/Australia"
             android:layout_alignBottom="@+id/Australia"
-            android:layout_alignStart="@+id/textView10"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView10"/>
 
         <TextView
             android:id="@+id/textView12"
@@ -77,8 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/Switzerland"
             android:layout_alignBottom="@+id/Switzerland"
-            android:layout_alignStart="@+id/textView11"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView11"/>
 
         <TextView
             android:id="@+id/textView13"
@@ -86,8 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/Brazil"
             android:layout_alignBottom="@+id/Brazil"
-            android:layout_alignStart="@+id/textView14"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView14"/>
 
         <TextView
             android:id="@+id/textView14"
@@ -95,8 +89,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/Mexico"
             android:layout_alignBottom="@+id/Mexico"
-            android:layout_alignStart="@+id/textView15"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView15"/>
 
         <TextView
             android:id="@+id/textView15"
@@ -104,8 +97,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/Canada"
             android:layout_alignBottom="@+id/Canada"
-            android:layout_alignStart="@+id/textView12"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView12"/>
 
         <TextView
             android:id="@+id/textView16"
@@ -113,8 +105,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/China"
             android:layout_alignBottom="@+id/China"
-            android:layout_alignStart="@+id/textView15"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView15" />
 
         <TextView
             android:id="@+id/textView17"
@@ -122,8 +113,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/Hong_Kong"
             android:layout_alignBottom="@+id/Hong_Kong"
-            android:layout_alignStart="@+id/textView16"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView16" />
 
         <TextView
             android:id="@+id/textView18"
@@ -131,8 +121,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@+id/Euro"
             android:layout_alignBottom="@+id/Euro"
-            android:layout_alignStart="@+id/textView13"
-            android:text="@string/app_name" />
+            android:layout_alignStart="@+id/textView13"/>
 
         <Button
             android:id="@+id/USD"
