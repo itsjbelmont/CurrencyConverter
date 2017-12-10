@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 public class MainActivity2 extends MainActivity
 {
+    int tester;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -56,6 +57,8 @@ public class MainActivity2 extends MainActivity
         addListenerOnButton10();
         addListenerOnButton11();
         addListenerOnButton12();
+
+
     }
 
 
@@ -63,15 +66,17 @@ public class MainActivity2 extends MainActivity
     public void addListenerOnButton2()
     {
 
+        tester = 1;
 
         //collects all the buttons
-        Button US_button = (Button) findViewById(R.id.USD);
+        final Button US_button = (Button) findViewById(R.id.USD);
 
         US_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+
+                Intent intent = new Intent(getApplicationContext(),us_activity.class);
 
                 startActivity(intent);
             }
@@ -81,6 +86,8 @@ public class MainActivity2 extends MainActivity
     //Button for British Pound
     public void addListenerOnButton3()
     {
+        tester = 2;
+
         Button Britain_button = (Button) findViewById(R.id.Britain);
 
         Britain_button.setOnClickListener(new View.OnClickListener()
@@ -88,7 +95,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),britain_activity.class);
 
                 startActivity(intent);
             }
@@ -99,6 +106,8 @@ public class MainActivity2 extends MainActivity
     //Button for Japanese Yen Dollar
     public void addListenerOnButton4()
     {
+        tester = 3;
+
         Button Japan_button = (Button) findViewById(R.id.Japan);
 
         Japan_button.setOnClickListener(new View.OnClickListener()
@@ -106,7 +115,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),japan_activity.class);
 
                 startActivity(intent);
             }
@@ -117,6 +126,8 @@ public class MainActivity2 extends MainActivity
     //Button for Australian Dollar
     public void addListenerOnButton5()
     {
+        tester = 4;
+
         Button Australia_button = (Button) findViewById(R.id.Australia);
 
         Australia_button.setOnClickListener(new View.OnClickListener()
@@ -124,7 +135,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),australia_activity.class);
 
                 startActivity(intent);
             }
@@ -134,6 +145,8 @@ public class MainActivity2 extends MainActivity
     //Button for Swiss Frac
     public void addListenerOnButton6()
     {
+        tester = 5;
+
         Button Swiss_button = (Button) findViewById(R.id.Switzerland);
 
         Swiss_button.setOnClickListener(new View.OnClickListener()
@@ -141,7 +154,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),swiss_activity.class);
 
                 startActivity(intent);
             }
@@ -151,6 +164,8 @@ public class MainActivity2 extends MainActivity
     //Button for Canadian Dollar
     public void addListenerOnButton7()
     {
+        tester = 6;
+
         Button Canada_button = (Button) findViewById(R.id.Canada);
 
         Canada_button.setOnClickListener(new View.OnClickListener()
@@ -158,7 +173,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),canada_activity.class);
 
                 startActivity(intent);
             }
@@ -168,6 +183,8 @@ public class MainActivity2 extends MainActivity
     //Button for China Yuan
     public void addListenerOnButton8()
     {
+        tester = 7;
+
         Button China_button = (Button) findViewById(R.id.China);
 
         China_button.setOnClickListener(new View.OnClickListener()
@@ -175,7 +192,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),china_activity.class);
 
                 startActivity(intent);
             }
@@ -185,6 +202,8 @@ public class MainActivity2 extends MainActivity
     //Button for Hong Kong Money
     public void addListenerOnButton9()
     {
+        tester = 8;
+
         Button Hong_button = (Button) findViewById(R.id.Hong_Kong);
 
         Hong_button.setOnClickListener(new View.OnClickListener()
@@ -192,7 +211,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),hong_kong_activity.class);
 
                 startActivity(intent);
             }
@@ -202,6 +221,8 @@ public class MainActivity2 extends MainActivity
     //Button for Mexican Peso
     public void addListenerOnButton10()
     {
+        tester = 9;
+
         Button Mexico_button = (Button) findViewById(R.id.Mexico);
 
         Mexico_button.setOnClickListener(new View.OnClickListener()
@@ -209,7 +230,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),mexico_activity.class);
 
                 startActivity(intent);
             }
@@ -219,6 +240,8 @@ public class MainActivity2 extends MainActivity
     //Button for Brazilian Real
     public void addListenerOnButton11()
     {
+        tester = 10;
+
         Button Brazil_button = (Button) findViewById(R.id.Brazil);
 
         Brazil_button.setOnClickListener(new View.OnClickListener()
@@ -226,7 +249,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),brazil_activity.class);
 
                 startActivity(intent);
             }
@@ -236,6 +259,8 @@ public class MainActivity2 extends MainActivity
     //Button for Euro
     public void addListenerOnButton12()
     {
+        tester = 11;
+
         Button Euro_button = (Button) findViewById(R.id.Euro);
 
         Euro_button.setOnClickListener(new View.OnClickListener()
@@ -243,7 +268,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
-                Intent intent = new Intent(getApplicationContext(),MainActivity3.class);
+                Intent intent = new Intent(getApplicationContext(),euro_activity.class);
 
                 startActivity(intent);
             }
