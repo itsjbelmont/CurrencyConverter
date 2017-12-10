@@ -18,73 +18,13 @@ public class MainActivity2 extends MainActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        String rates[][] = new String[11][2];
-        rates[0][0] = "US Dollar";
-        rates[1][0] = "British Pound";
-        rates[2][0] = "Japanese Yen";
-        rates[3][0] = "Australian Dollar";
-        rates[4][0] = "Swiss Franc";
-        rates[5][0] = "Canadian Dollar";
-        rates[6][0] = "Chinese Yuan";
-        rates[7][0] = "Hong Kong Dollar";
-        rates[8][0] = "Mexican Peso";
-        rates[9][0] = "Brazilian Real";
-        rates[10][0] = "Euro";
-
-        rates[0][1] = "0.8499";
-        rates[1][1] = "1.1377";
-        rates[2][1] = "0.0075";
-        rates[3][1] = "0.6381";
-        rates[4][1] = "0.8560";
-        rates[5][1] = "0.6616";
-        rates[6][1] = "0.1284";
-        rates[7][1] = "0.1089";
-        rates[8][1] = "0.0449";
-        rates[9][1] = "0.2584";
-        rates[10][1] = "1.0000";
-        //Gets whatever was inputted into main text box
-        double newValue = Double.parseDouble(getIntent().getStringExtra("VALUE"));
-        String newChoice = getIntent().getStringExtra("CHOICE");
-        String str = String.valueOf(newValue);
         setContentView(R.layout.activity_main2);
 
-        //Puts value into text box 8
-        TextView textView = (TextView) findViewById(R.id.textView8);
-        textView.setText(str);
 
-        //Puts value into text box 9
-        TextView textView1 = (TextView) findViewById(R.id.textView9);
-        textView1.setText(str);
 
-        //puts value into box 10
-        TextView textView2 = (TextView) findViewById(R.id.textView10);
-        textView2.setText(str);
 
-        //puts value into box 11
-        TextView textView3 = (TextView) findViewById(R.id.textView11);
-        textView3.setText(str);
-
-        //puts view into box 12
-        TextView textView4 = (TextView) findViewById(R.id.textView12);
-        textView4.setText(str);
-
-        TextView textView5 = (TextView) findViewById(R.id.textView15);
-        textView5.setText(str);
-
-        TextView textView6 = (TextView) findViewById(R.id.textView16);
-        textView6.setText(str);
-
-        TextView textView7 = (TextView) findViewById(R.id.textView17);
-        textView7.setText(str);
-
-        TextView textView8 = (TextView) findViewById(R.id.textView14);
-        textView8.setText(str);
-
-        TextView textView9 = (TextView) findViewById(R.id.textView13);
-        textView9.setText(str);
-
-        TextView textView10 = (TextView) findViewById(R.id.textView18);
-        textView10.setText(str);
+        //load button
+        addListenerOnButton0();
 
         addListenerOnButton2();
         addListenerOnButton3();
@@ -102,6 +42,85 @@ public class MainActivity2 extends MainActivity
     }
 
 
+
+    public void addListenerOnButton0()
+    {
+        final Button load = (Button) findViewById(R.id.load);
+        load.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String rates[][] = new String[11][2];
+                rates[0][0] = "US Dollar";
+                rates[1][0] = "British Pound";
+                rates[2][0] = "Japanese Yen";
+                rates[3][0] = "Australian Dollar";
+                rates[4][0] = "Swiss Franc";
+                rates[5][0] = "Canadian Dollar";
+                rates[6][0] = "Chinese Yuan";
+                rates[7][0] = "Hong Kong Dollar";
+                rates[8][0] = "Mexican Peso";
+                rates[9][0] = "Brazilian Real";
+                rates[10][0] = "Euro";
+
+                rates[0][1] = "0.8499";
+                rates[1][1] = "1.1377";
+                rates[2][1] = "0.0075";
+                rates[3][1] = "0.6381";
+                rates[4][1] = "0.8560";
+                rates[5][1] = "0.6616";
+                rates[6][1] = "0.1284";
+                rates[7][1] = "0.1089";
+                rates[8][1] = "0.0449";
+                rates[9][1] = "0.2584";
+                rates[10][1] = "1.0000";
+                //Gets whatever was inputted into main text box
+                double newValue = Double.parseDouble(getIntent().getStringExtra("VALUE"));
+                String newChoice = getIntent().getStringExtra("CHOICE");
+                String str = String.valueOf(newValue);
+
+
+                //Puts value into text box 8
+                TextView textView = (TextView) findViewById(R.id.textView8);
+                textView.setText(str);
+
+                //Puts value into text box 9
+                TextView textView1 = (TextView) findViewById(R.id.textView9);
+                textView1.setText(str);
+
+                //puts value into box 10
+                TextView textView2 = (TextView) findViewById(R.id.textView10);
+                textView2.setText(str);
+
+                //puts value into box 11
+                TextView textView3 = (TextView) findViewById(R.id.textView11);
+                textView3.setText(str);
+
+                //puts view into box 12
+                TextView textView4 = (TextView) findViewById(R.id.textView12);
+                textView4.setText(str);
+
+                TextView textView5 = (TextView) findViewById(R.id.textView15);
+                textView5.setText(str);
+
+                TextView textView6 = (TextView) findViewById(R.id.textView16);
+                textView6.setText(str);
+
+                TextView textView7 = (TextView) findViewById(R.id.textView17);
+                textView7.setText(str);
+
+                TextView textView8 = (TextView) findViewById(R.id.textView14);
+                textView8.setText(str);
+
+                TextView textView9 = (TextView) findViewById(R.id.textView13);
+                textView9.setText(str);
+
+                TextView textView10 = (TextView) findViewById(R.id.textView18);
+                textView10.setText(str);
+            }
+        });
+    }
+
     //Button for US Dollar
     public void addListenerOnButton2()
     {
@@ -114,6 +133,7 @@ public class MainActivity2 extends MainActivity
         US_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
 
 
                 Intent intent = new Intent(getApplicationContext(),us_activity.class);
