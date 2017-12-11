@@ -52,48 +52,48 @@ public class MainActivity2 extends MainActivity
 
                 
                 //Gets whatever was inputted into main text box
-                double newValue = Double.parseDouble(getIntent().getStringExtra("VALUE"));
+                double newValue = (Double.parseDouble(getIntent().getStringExtra("VALUE")));
                 String newChoice = getIntent().getStringExtra("CHOICE");
                 String str = String.valueOf(newValue);
 
 
                 //Puts value into text box 8
                 TextView textView = (TextView) findViewById(R.id.textView8);
-                textView.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "US Dollar"))) * 100) / 100));
+                textView.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "US Dollar"))) * 100) / 100));
 
                 //Puts value into text box 9
                 TextView textView1 = (TextView) findViewById(R.id.textView9);
-                textView1.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "British Pound"))) * 100) / 100));
+                textView1.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "British Pound"))) * 100) / 100));
 
                 //puts value into box 10
                 TextView textView2 = (TextView) findViewById(R.id.textView10);
-                textView2.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "Japanese Yen"))) * 100) / 100));
+                textView2.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "Japanese Yen"))) * 100) / 100));
 
                 //puts value into box 11
                 TextView textView3 = (TextView) findViewById(R.id.textView11);
-                textView3.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "Australian Dollar"))) * 100) / 100));
+                textView3.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "Australian Dollar"))) * 100) / 100));
 
                 //puts view into box 12
                 TextView textView4 = (TextView) findViewById(R.id.textView12);
-                textView4.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "Swiss Franc"))) * 100) / 100));
+                textView4.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "Swiss Franc"))) * 100) / 100));
 
                 TextView textView5 = (TextView) findViewById(R.id.textView15);
-                textView5.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "Canadian Dollar"))) * 100) / 100));
+                textView5.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "Canadian Dollar"))) * 100) / 100));
 
                 TextView textView6 = (TextView) findViewById(R.id.textView16);
-                textView6.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "Chinese Yuan"))) * 100) / 100));
+                textView6.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "Chinese Yuan"))) * 100) / 100));
 
                 TextView textView7 = (TextView) findViewById(R.id.textView17);
-                textView7.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "Hong Kong Dollar"))) * 100) / 100));
+                textView7.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "Hong Kong Dollar"))) * 100) / 100));
 
                 TextView textView8 = (TextView) findViewById(R.id.textView14);
-                textView8.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "Mexican Peso"))) * 100) / 100));
+                textView8.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "Mexican Peso"))) * 100) / 100));
 
                 TextView textView9 = (TextView) findViewById(R.id.textView13);
-                textView9.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "Brazilian Real"))) * 100) / 100));
+                textView9.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "Brazilian Real"))) * 100) / 100));
 
                 TextView textView10 = (TextView) findViewById(R.id.textView18);
-                textView10.setText(String.valueOf(Math.floor((newValue * (ExchangeRate.getSpecificRate(newChoice, "Euro"))) * 100) / 100));
+                textView10.setText(String.valueOf((double)Math.round((newValue * (ExchangeRate.getSpecificRate(newChoice, "Euro"))) * 100) / 100));
 
             }
         });

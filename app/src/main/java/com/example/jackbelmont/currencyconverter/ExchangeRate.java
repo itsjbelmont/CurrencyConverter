@@ -37,7 +37,7 @@ public class ExchangeRate {
     private static int get_Index(String str, String[][] array)
     {
         int index =0;
-        for(int i = 0; i <= array[0][0].length() - 1; i++) {
+        for(int i = 0; i <= 10; i++) {
             if (array[i][0].equals(str))
             {
                 index = i;
