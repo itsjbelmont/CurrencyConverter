@@ -26,7 +26,7 @@
             android:layout_marginBottom="293dp"
             android:contentDescription="@string/Money_Options"
             android:visibility="visible"
-            app:srcCompat="@drawable/british_pound" />
+            app:srcCompat="@drawable/british_pound2" />
 
 
         <ImageView

@@ -35,7 +35,7 @@
             android:layout_marginBottom="293dp"
             android:contentDescription="@string/Money_Options"
             android:visibility="visible"
-            app:srcCompat="@drawable/swiss_franc" />
+            app:srcCompat="@drawable/swiss_franc2" />
 
 
 
