@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Currency Converter</string>
+    <string name="app_name">The Exchange</string>
     <string name = "Money_Options">Choose a Currency</string>
 
     <string-array name = "Currency_arrays">
