@@ -12,6 +12,7 @@ import android.widget.EditText;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -51,6 +52,7 @@ public class MainActivity extends AppCompatActivity
                 String choice = spinner.getSelectedItem().toString();
                 intent.putExtra("VALUE", value);
                 intent.putExtra("CHOICE", choice);
+                Toast.makeText(getApplicationContext(), "Converting!",Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });

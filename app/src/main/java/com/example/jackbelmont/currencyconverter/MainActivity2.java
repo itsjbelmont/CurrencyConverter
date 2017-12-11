@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by Patrick on 12/8/2017.
@@ -55,7 +56,7 @@ public class MainActivity2 extends MainActivity
                 double newValue = (Double.parseDouble(getIntent().getStringExtra("VALUE")));
                 String newChoice = getIntent().getStringExtra("CHOICE");
                 String str = String.valueOf(newValue);
-
+                Toast.makeText(getApplicationContext(), "Loading Conversions!",Toast.LENGTH_SHORT).show();
 
                 //Puts value into text box 8
                 TextView textView = (TextView) findViewById(R.id.textView8);
@@ -113,7 +114,7 @@ public class MainActivity2 extends MainActivity
             public void onClick(View view) {
 
 
-
+                Toast.makeText(getApplicationContext(), "United States!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),us_activity.class);
 
                 startActivity(intent);
@@ -133,6 +134,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "Great Britain!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),britain_activity.class);
 
                 startActivity(intent);
@@ -153,6 +155,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "Japan!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),japan_activity.class);
 
                 startActivity(intent);
@@ -173,6 +176,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "Australia!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),australia_activity.class);
 
                 startActivity(intent);
@@ -192,6 +196,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "Switzerland!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),swiss_activity.class);
 
                 startActivity(intent);
@@ -211,6 +216,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "Canada!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),canada_activity.class);
 
                 startActivity(intent);
@@ -230,6 +236,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "China!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),china_activity.class);
 
                 startActivity(intent);
@@ -249,6 +256,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "Hong Kong!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),hong_kong_activity.class);
 
                 startActivity(intent);
@@ -268,6 +276,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "Mexico!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),mexico_activity.class);
 
                 startActivity(intent);
@@ -287,6 +296,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "Brazil!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),brazil_activity.class);
 
                 startActivity(intent);
@@ -306,6 +316,7 @@ public class MainActivity2 extends MainActivity
             @Override
             public void onClick(View view)
             {
+                Toast.makeText(getApplicationContext(), "European Union!",Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(),euro_activity.class);
 
                 startActivity(intent);
