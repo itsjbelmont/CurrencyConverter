@@ -1,5 +1,5 @@
 # CurrencyConverter
-An app to convert Cerrency.
+An app to convert various currencies.
 
 On the first activity, you fill the text box with the total amound of money you have in the current currency. You
 should then select using the drop down menu on the main activity what kind of currency you have. Once you have filled
